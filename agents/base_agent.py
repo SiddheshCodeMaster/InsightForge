@@ -7,4 +7,4 @@ class BaseAgent:
         self.name = name
 
     def run(self, context):
-        raise NotImplementedError("Agents must implement run()")
+        raise NotImplementedError

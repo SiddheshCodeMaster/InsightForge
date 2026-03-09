@@ -11,14 +11,10 @@ class AgentGraph:
         self.agents.append(agent)
 
     def run(self, context):
-        """
-        Runs the agents sequentially.
-        """
-        for agent in self.agents:
-            print(f"\n Running {agent.name}...")
-            result = agent.run(context)
 
-            if isinstance(result, dict):
-                context.update(result)
+        for agent in self.agents:
+            print(f"\nRunning {agent.name}...")
+
+            context = agent.run(context)
 
         return context

@@ -1,2 +1,15 @@
-/insightforge
+# Python
+__pycache__/
+*.pyc
+*.pyo
 
+# Virtual environment
+venv/
+insightforge/
+
+# Environment variables
+.env
+
+# OS
+.DS_Store
+Thumbs.db
